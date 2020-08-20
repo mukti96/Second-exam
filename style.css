@@ -1,0 +1,1030 @@
+/*
+	Template Name: Mukti - Personal Portfolio Template
+	Author: Mukti ara khatun
+	E-mail: mukti.mr1996@gmail.com
+	version: 1.0.0
+	Description: HTML5 Responsive Portfolio Template
+	Tags: Personal template, portfolio, best theme, resum, best seller, onepage theme, cv, responsive theme
+*/
+/************ INDEX ***************
+
+    01. Google fonts
+	02. General css
+	03. Preloder css
+	04. Section title
+	05. Header area
+	06. Header button
+	07. About area
+	08. Services area
+	09. Portfolio area
+	10. Count up area
+	11. Pricing area
+	12. Team area
+	13. Testimonal area 
+	14. Blog area
+	15. Contact area
+	16. Footer area
+	17. Scroll Top area
+
+ ***********************************/
+/*======================= 
+	01. Google fonts
+=======================*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700;800;900&display=swap');
+
+/*=====================
+	02. General css 
+=======================*/
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Mulish', sans-serif;
+}
+a,
+a:hover{
+    text-decoration: none;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}
+li {
+    list-style: none;
+}
+h1, 
+h2, 
+h3, 
+h4, 
+h5, 
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+p {
+	color: #8492a6;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+}
+.ptb-100 {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.mb-30{
+	margin-bottom: 30px;
+}
+img{
+	width: 100%;
+	height: 100%;
+}
+
+/*=======================
+	03. preloder css
+========================*/
+.loader-bg{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	z-index: 9999;
+}
+.loader{
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	border: 0px solid transparent;
+	border-radius: 50%;
+	top: calc(50vh - 75px);
+	left: calc(50vw - 75px);
+}
+.loader::before,
+.loader::after{
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: inherit;
+	height: inherit;
+	border: 1em solid #000027;
+	border-radius: 50%;
+	animation: loader 2s linear infinite;
+	opacity: 0;
+}
+.loader::before{
+	animation-delay: .5s;
+}
+@keyframes loader{
+	0%{
+		transform: scale(0);
+		opacity: 0;
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		transform: scale(1);
+		opacity: 0;
+	}
+}
+/****** drawer mobile ******/
+.drawer-hamburger-icon,
+.drawer-hamburger-icon::after,
+.drawer-hamburger-icon::before {
+	background-color: #eb1768;
+}
+.drawer-overlay {
+		display: none!important;
+	}
+/*========================
+	04. Section title
+=========================*/
+.title-text,
+.title-text-1{
+	text-align: center;
+	margin-top: -23px;
+}
+.title-text p,
+.title-text-1 p {
+	padding: 10px 0px 60px 0px;
+	text-align: center;
+	color: #8492a6;
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
+}
+.title-text h2,
+.title-text-1 h2 {
+	font-size: 38px;
+	line-height: 58px;
+	font-weight: 800;
+	text-transform: capitalize;
+}
+.title-text-1 p {
+	color: #fff;
+}
+.title-text-1 h2 {
+	color: #fff;
+}
+/*======================
+	05. Header area
+======================*/
+.header-area {
+	background-image: url('assets/images/header-bg.jpg');
+	width: 100%;
+	height: 100vh;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	z-index: 1;
+	background-attachment: fixed;
+	overflow: hidden;
+}
+.header-area::after {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000027;
+	opacity: .9;
+	z-index: -9999;
+}
+/****** Logo ******/
+.logo {
+    width: 20%;
+    float: left;
+}
+.logo a {
+	font-size: 30px;
+	line-height: 30px;
+	font-weight: 700;
+	color: #eb1768;
+	text-transform: uppercase;
+	margin: 12px 0px 0px 14px;
+	display: inline-block;
+}
+/****** navber ******/
+.nav-bar {
+    width: 100%;
+    padding: 12px 0px;
+}
+.menu-area {
+    width: 80%;
+    float: left;
+    text-align: right;
+}
+.nav-bar.sticky.fixed {
+	background: #fff;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 9999;
+	animation: fadeInDown .5s both;
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+.nav-bar.sticky.fixed .menu-area ul li a {
+	color: #000027;
+}
+.menu-area ul li {
+    display: inline-block;
+}
+.menu-area ul li a {
+    display: inline-block;
+	font-size: 14px;
+    text-transform: uppercase;
+    padding: 16px;
+    color: #fff;
+    transition: all .5s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+.menu-area ul li a::before {
+    position: absolute;
+    content: "";
+    background-color: #eb1768;
+    bottom: 0px;
+    right: 100%;
+    width: 100%;
+    height: 4px;
+    transition: all .5s ease-in-out;
+    text-align: left;
+}
+.menu-area ul li a:hover::before,
+.menu-area ul li a.active::before {
+    right: 0;
+}
+.menu-area ul li a.active,
+.menu-area ul li a:hover {
+	color: #eb1768;
+}
+.nav-bar.sticky.fixed .menu-area ul li a.active,
+.nav-bar.sticky.fixed .menu-area ul li a:hover {
+	color: #eb1768;
+}
+.header-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	color: #fff;
+	width: 100%;
+}
+.header-img {
+	width: 15%;
+}
+.header-text img {
+	border-radius: 50%;
+	margin-bottom: 16px; 
+}
+.header-text h2 {
+	font-size: 40px;
+	line-height: 60px;
+	font-weight: 800;
+	letter-spacing: .5px;
+	text-transform: capitalize;
+}
+.cd-words-wrapper {
+	color: #eb1768;
+	letter-spacing: 1px;
+	font-size: 20px;
+	font-weight: 500;
+}
+.cd-headline {
+	font-size: 20px;
+	text-transform: capitalize;
+	font-weight: 500;
+	line-height: 22px;
+}
+.cd-headline-color{
+	color: #fff;
+}
+.header-area .divider{
+	position: absolute;
+	bottom: -8px;
+	left: 0;
+	width: 100%;
+	z-index: -999;
+}
+.my-wave1 {
+	fill: #000027;
+}
+.my-wave2 {
+	fill: #eb1768;
+}
+.my-wave3 {
+	fill: #fff;
+}
+/*======================
+	06. Header button
+======================*/
+.button-head {
+	display: inline-block;
+	background-color: #192a56;
+	border-radius: 20px;
+	padding: 12px 36px;
+	font-size: 14px;
+	line-height: 21px;
+	text-transform: capitalize;
+	letter-spacing: 1.3px;
+	transition: all 0.3s ease;
+	box-shadow: 3px 3px 3px #000027, -3px -3px 3px #131332;
+}
+.button-head:hover,
+.button-head.active {
+  box-shadow: inset 3px 3px 3px #000027, inset -3px -3px 3px #131332;
+}
+.header-button span a {
+	color: #fff;
+	margin-top: 26px;
+	margin-left: 10px;
+}
+/*====================
+	07. About area
+=====================*/
+.about-img img {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
+	z-index: -1;
+	border-radius: 50%;
+}
+.about-img {
+	margin-right: 30px;
+}
+.about-img .square img {
+  box-shadow: none;
+  border-radius: 0;
+}
+.square {
+	position: absolute;
+	left: -10px;
+	bottom: 25px;
+	z-index: -111;
+	animation: rotate 25s linear infinite;
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.circle {
+	position: absolute;
+	border-radius: 50%;
+	top: 30%;
+	right: 8%;
+	width: 13%;
+	height: 14%;
+	background: #fbdd62;
+	opacity: 0.9;
+	overflow: hidden;
+	animation: circling 18s linear infinite;
+	z-index: 0;
+}
+@keyframes circling {
+  0% {
+    transform: rotate(0deg) translate(-70px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg) translate(-70px) rotate(-360deg);
+  }
+}
+.circle-2 {
+	position: absolute;
+	top: 44%;
+	bottom: 44%;
+	left: 18%;
+	right: 0;
+	width: 9%;
+	height: 10%;
+	background: #eb1768;
+	border-radius: 50%;
+	opacity: 0.9;
+	overflow: hidden;
+	margin: auto;
+	animation: circlereverse 22s linear infinite;
+	z-index: 0;
+}
+@keyframes circlereverse {
+  0% {
+    transform: rotate(0deg) translate(-250px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg) translate(-250px) rotate(360deg);
+  }
+}
+.floating {
+	position: absolute;
+	top: 4%;
+	right: 8%;
+	width: 8%;
+	height: 9%;
+	background: #000027;
+	border-radius: 50%;
+	opacity: 0.9;
+	overflow: hidden;
+	z-index: 0;
+	animation: floating 5s linear infinite;
+}
+@keyframes floating {
+  0% {
+    transform: translate(0px);
+  }
+  50% {
+    transform: translate(-50px);
+  }
+  100% {
+    transform: translate(0px);
+  }
+}
+.about-text{
+	padding-left: 24px;
+}
+.about-text h3 {
+	padding-top: 74px;
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: 700;
+}
+.about-text h3 span{
+	color: #eb1768;
+}
+.about-text p {
+	padding: 10px 0px;
+}
+.personal-details {
+	text-transform: capitalize;
+	padding: 26px 0px 0px 24px;
+	border-radius: 8px;
+}
+.personal-details h5 {
+	font-weight: 700;
+	padding-bottom: 10px;
+	border-bottom: 2px dotted;
+	margin: 0px 18px 16px 0px;
+}
+.personal-details p {
+	font-size: 14px;
+	color: #eb1768;
+	padding: 4px 0px;
+}
+.personal-details span {
+	font-size: 15px;
+	font-weight: 500;
+	color: #000;
+}
+.signature h3 {
+	font-family: 'Great Vibes', cursive;
+	letter-spacing: 1px;
+	padding-top: 110px;
+	font-size: 30px;
+	text-transform: capitalize;
+	line-height: 45px;
+	text-align: center;
+}
+/*======================
+	08. Services area
+=========================*/
+.services-area,
+.count-area,
+.team-area,
+.blog-area {
+	background-image: url('assets/images/bg.jpg');
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+	background-attachment: fixed
+}
+.services-area::before,
+.count-area::before,
+.team-area::before,
+.blog-area::before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #000027;
+	opacity: .9;
+}
+.single-service {
+    box-shadow: 3px 3px 3px #000027, -3px -3px 3px #131332;
+    background: #fff;
+	padding: 60px 20px;
+	text-align: center;
+	border-radius: 3px;
+	position: relative;
+}
+.service-box-top::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 6px;
+    background-color: #eb1768; 
+}
+.service-box-top::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 6px;
+    height: 50%;
+    background-color: #eb1768;
+}
+.service-box-bottom::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 6px;
+    background-color: #eb1768;
+}
+.service-box-bottom::before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    width: 6px;
+    height: 50%;
+    background-color: #eb1768; 
+}
+.single-service h4 {
+	padding: 16px 0px 10px 0px;
+	font-size: 24px;
+	line-height: 36px;
+	font-weight: 700;
+}
+.single-service i {
+	font-size: 30px;
+	line-height: 45px;
+	color: #eb1768;
+}
+.single-service:hover i {
+  transform: rotateY(360deg);
+  transition: 0.9s ease;
+}
+/*========================
+	09. Portfolio area
+=========================*/
+.portfolio-button ul li {
+	display: inline-block;
+}
+.portfolio-button ul li a {
+	padding: 8px 20px;
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #000;
+	border-radius: 20px;
+	transition: all 0.3s ease;
+	box-shadow: 3px 3px 3px #dadada, -3px -3px 3px #fafafa;
+}
+.portfolio-button ul li a:hover,
+.portfolio-button ul li a.active {
+	box-shadow: inset 3px 3px 3px #dadada, inset -3px -3px 3px #fafafa;
+	border: none;
+	color: #eb1768;
+}
+.portfolio-button {
+	padding-bottom: 40px;
+}
+.single-portfolio {
+	position: relative;
+	cursor: pointer;
+}
+.single-portfolio:hover::after {
+	position: absolute;
+	content: "";
+	top: 4%;
+	left: 4%;
+	background: #eb1768;
+	width: 92%;
+	height: 92%;
+	opacity: .9;
+	transition: all 0.3s ease;
+}
+.portfolio-text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: #fff;
+	z-index: 999;
+	text-align: center;
+}
+.portfolio-text {
+	display: none;
+}
+.single-portfolio:hover .portfolio-text {
+	display: block;
+}
+.portfolio-text a i{
+	font-size: 24px;
+	color: #fff;
+}
+.portfolio-text h5{
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 700;
+	color: #fff;
+	padding-bottom: 18px;
+}
+/*====================
+	10. Count area
+=====================*/
+.single-count {
+	padding: 60px 30px;
+	background-color: #fff;
+	color: #000;
+	text-align: center;
+	box-shadow: 3px 3px 3px #000027, -3px -3px 3px #131332;
+	border-radius: 5px;
+}
+.single-count h4 {
+	padding-top: 14px;
+	font-size: 24px;
+	line-height: 30px;
+	text-transform: capitalize;
+	font-weight: 700;
+}
+.single-count span {
+	color: #eb1768;
+	font-size: 30px;
+	font-weight: 800;
+}
+/*======================
+	11. Pricing area
+=======================*/
+.pricing-heading {
+	background: #eb1768;
+	padding: 24px 0px;
+}
+.pricing-heading h2 {
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 30px;
+	font-weight: 700;
+}
+.single-pricing-item {
+	border: 1px solid #eb1768;
+}
+.pricing-content {
+	padding: 30px 0 0 0;
+}
+.price-btn {
+	display: block;
+	margin-top: 42px;
+}
+.pricing-content ul li {
+	margin-bottom: 10px;
+	text-transform: capitalize;
+	border-bottom: 1px dashed #eb1768;
+	padding-bottom: 10px;
+	font-size: 16px;
+	font-weight: 400;
+	display: block;
+}
+.price-value {
+	font-size: 35px;
+	color: #fff;
+	text-align: center;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	width: 125px;
+	height: 125px;
+	display: inline-block;
+	margin-top: 15px;
+	padding-top: 25px;
+	font-weight: 700;
+	line-height: 1.2;
+}
+.price-value > span {
+	font-size: 16px;
+	display: block;
+	font-weight: 400;
+	line-height: 1.5;
+}
+.price-btn {
+	display: block;
+	margin-top: 42px;
+}
+.color-btn {
+	color: #fff;
+	text-transform: uppercase;
+	padding: 15px 30px;
+	font-size: 16px;
+	border: 1px solid transparent;
+	background: #eb1768;
+	font-weight: 700;
+}
+.price-btn:hover {
+	background: transparent;
+	color: #eb1768;
+	border-top: 1px solid #eb1768;
+}
+/*====================
+	12. Team area
+====================*/
+.our-team {
+	padding: 30px 0 40px;
+	background: #fff;
+	text-align: center;
+	overflow: hidden;
+	position: relative;
+	z-index: 0;
+}
+.single-team-image {
+	width: 130px;
+	height: 130px;
+	margin-bottom: 50px;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+}
+.single-team-image::before {
+	position: absolute;
+	content: "";
+	background: #eb1768;
+	width: 100%;
+	bottom: 135%;
+	right: 0;
+	left: 0;
+	transform: scale(3);
+	transition: all .4s linear 0s;
+	height: 0;
+	border-radius: 50%;
+}
+.our-team:hover .single-team-image::before {
+	height: 100%;
+}
+.single-team-image::after {
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background: #eb1768;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+.single-team-image img {
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	transform: scale(1);
+	transition: all .9s ease 0s;
+}
+.our-team:hover .single-team-image img {
+	transform: scale(.7);
+	box-shadow: 0 0 0 12px #f2f5ec;
+}
+.team-text h2 {
+	font-size: 25px;
+	font-weight: 500;
+	text-transform: uppercase;
+	color: #eb1768;
+	margin-bottom: 5px;
+}
+.team-text span {
+	display: block;
+	font-size: 16px;
+	color: #1b2127;
+	text-transform: capitalize;
+	padding-bottom: 60px;
+}
+.team-social {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	background: #eb1768;
+	position: absolute;
+	bottom: -100px;
+	left: 0;
+	transition: all .5s ease 0s;
+}
+.our-team:hover .team-social {
+	bottom: 0;
+}
+.team-social li {
+	display: inline-block;
+}
+.team-social li a {
+	display: block;
+	padding: 10px;
+	font-size: 17px;
+	color: #fff;
+	transition: all .3s ease 0s;
+}
+.team-social li a:hover {
+	color: #eb1768;
+	background: #fff;
+}
+.our-team.active .single-team-image::before {
+	height: 100%;
+}
+.our-team.active .single-team-image img {
+	transform: scale(.7);
+	box-shadow: 0 0 0 12px #f2f5ec;
+}
+.our-team.active .team-social {
+	bottom: 0;
+}
+.team-social.active li a {
+	color: #fff;
+	background: #eb1768;
+}
+.team-social.active li a:hover {
+	color: #eb1768;
+	background: #fff;
+}
+/*=========================
+	13. Testimonial area
+==========================*/
+.owl-carousel.owl-theme.client-owl-carousel {
+	z-index: 0;
+}
+.single-client {
+	text-align: center;
+	background-color: #fff;
+	padding: 60px 20px;
+	border: 1px solid #ccc;
+}
+.single-client i {
+	font-size: 36px;
+	line-height: 46px;
+	color: #eb1768;
+}
+.single-client p {
+	padding: 20px 0px 20px 0;
+}
+.client-img {
+	width: 60px;
+	height: 60px;
+	margin: 0px auto;
+	margin-bottom: 20px;
+}
+.client-img img {
+	border-radius: 100%;
+}
+.client-name strong {
+	font-size: 15px;
+	line-height: 24px;
+	text-transform: capitalize;
+
+}
+.client-owl-carousel button.owl-dot {
+	background: #eb1768;
+	display: inline-block;
+	height: 15px;
+	margin: 0 5px;
+	width: 15px;
+	border-radius: 50%;
+}
+.client-owl-carousel button.owl-dot.active {
+	background: #ddd;
+}
+.client-owl-carousel .owl-dots {
+	text-align: center;
+	margin-top: 25px;
+}
+/*==================
+	14. Blog area
+====================*/
+.single-blog img {
+	border-radius: 20px 20px 0px 0px;
+}
+.blog-all-text {
+	background-color: #f7f7f7;
+	padding: 30px;
+}
+.blog-title h2 {
+	text-transform: uppercase;
+	font-size: 18px;
+	padding: 0 0px 9px 0px;
+	letter-spacing: 1px;
+	font-weight: 700;
+}
+.blog-title h2 a {
+	color: #333;
+	transition: .3s;
+	display: inline-block;
+}
+.blog-title h2 a:hover {
+	color: #eb1768;
+}
+.date {
+	font-size: 15px;
+	color: #172539;
+}
+.blog-desc p {
+	padding: 20px 0px 20px 0;
+	text-align: justify;
+}
+.blog-desc a {
+	color: #eb1768;
+}
+/*=====================
+	15. Contact area
+=======================*/
+.nes input[type="text"] {
+	width: 100%;
+	padding: 8px 10px;
+	border: none;
+	box-shadow: inset 3px 3px 3px #dadada, inset -3px -3px 3px #f6f6f6;
+}
+.nes input[type="email"]{
+	width: 100%;
+	padding: 8px 10px;
+	margin: 30px 0px 30px 0px;
+	border: none;
+	box-shadow: inset 3px 3px 3px #dadada, inset -3px -3px 3px #f6f6f6;
+}
+.sms textarea {
+	width: 100%;
+	padding: 10px 10px;
+	border: none;
+	box-shadow: inset 3px 3px 3px #dadada, inset -3px -3px 3px #f6f6f6;
+}
+.submit input[type="submit"] {
+	margin-top: 30px;
+	font-size: 16px;
+	padding: 8px 16px;
+	color: #eb1768;
+	font-weight: 500;
+	border: none;
+	box-shadow: inset 3px 3px 3px #dadada, inset -3px -3px 3px #f6f6f6;
+}
+.submit {
+	text-align: right;
+}
+.pel {
+	text-align: center;
+	padding-bottom: 70px;
+}
+.phone h4 {
+	padding: 14px 0px 16px 0;
+	text-transform: capitalize;
+}
+.phone i {
+	font-size: 22px;
+	color: #eb1768;
+}
+.phone:hover i {
+  transform: rotateY(360deg);
+  transition: 0.9s ease;
+}
+.phone span {
+	padding-top: 16px;
+	display: block;
+	color: #8492a6;
+	text-transform: capitalize;
+}
+/*=====================
+	16. Footer area
+=====================*/
+.footer-area {
+	background-color: #111;
+}
+.copy-right {
+	text-align: center;
+	padding: 30px 0px;
+	text-transform: capitalize;
+}
+/*======================== 
+	17. Scroll top area 
+=========================*/
+.scroll-up {
+	display: inline-block;
+	position: fixed;
+	bottom: 25px;
+	right: 20px;
+	width: 40px;
+	height: 40px;
+	background: #eb1768;
+	border-radius: 5px;
+	color: #fff;
+	line-height: 40px;
+	text-align: center;
+	opacity: 0;
+	transition: .3s;
+	cursor: pointer;
+}
+.scroll-up.weblift{
+	opacity: 1;
+}

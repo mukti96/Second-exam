@@ -1,0 +1,387 @@
+/* Extra large devices 1200px */
+@media only screen and (min-width: 1200px) {
+    .drawer-toggle.drawer-hamburger {
+		display: none;
+	}
+
+}
+
+/* Large devices 992px 1199px */
+@media only screen and (min-width: 992px) and (max-width: 1199.98px){
+    .drawer-toggle.drawer-hamburger {
+    	display: none;
+	}
+	.single-count h4 {
+		font-size: 22px;
+	}
+}
+ 
+/* Tablet devices 768px 991px */
+@media only screen and (min-width: 768px) and (max-width: 991.98px){
+    .nav-bar.d-flex.justify-content-around.sticky {
+		display: none !important;
+	}
+	.drawer-toggle.drawer-hamburger {
+		display: block;
+	}
+	.menu-area {
+		text-align: center;
+	}
+	.logo a {
+		margin: 25px 0px 30px 42px;
+		display: inline-block;
+	}
+	.menu-area ul li a {
+		color: #000;
+	}
+	.menu-area ul li{
+		display: block;
+	}
+	.header-text h2 {
+		font-size: 36px;
+		line-height: 54px;
+	}
+	.header-img {
+		width: 20%;
+	}
+	.header-text img {
+		margin-bottom: 6px;
+		margin-top: -80px;
+	}
+	.cd-headline span {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	.header-button span a {
+		margin-top: 18px;
+	}
+	.button-head {
+		padding: 8px 24px;
+		font-size: 12px;
+	}
+	.ptb-100 {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	p {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.title-text h2,
+	.title-text-1 h2 {
+		font-size: 30px;
+		line-height: 45px;
+	}
+	.title-text p,
+	.title-text-1 p {
+		padding: 8px 0px 50px 0px;
+		line-height: 20px;
+		font-size: 15px;
+		letter-spacing: .5px;
+	}
+	.square {
+		bottom: 28px;
+		left: 35px;
+	}
+	.circle {
+		height: 15%;
+	}
+	.circle-2 {
+		height: 10%;
+		left: 3%;
+		bottom: 50%;
+	}
+	@keyframes circlereverse {
+	  0% {
+	    transform: rotate(0deg) translate(-50px) rotate(0deg);
+	  }
+	  100% {
+	    transform: rotate(-360deg) translate(-50px) rotate(360deg);
+	  }
+	}
+	.floating {
+		height: 9%;
+	}
+	.about-text h3 {
+		padding-top: 0px;
+		font-size: 20px;
+		line-height: 18px;
+	}
+	.personal-details {
+		padding: 2px 0px 0px 0px;
+	}
+	.personal-details h5 {
+		padding-bottom: 8px;
+		margin: 0px 18px 6px 0px;
+		font-size: 16px;
+	}
+	.personal-details p {
+		font-size: 10px;
+		padding: 3px 0px;
+	}
+	.about-text {
+		padding-left: 0px;
+	}
+	.personal-details span {
+		font-size: 12px;
+	}
+	.signature h3 {
+		padding-top: 64px;
+		font-size: 22px;
+	}
+	.single-service h4 {
+		padding: 4px 0px 4px 0px;
+		font-size: 18px;
+		line-height: 28px;
+	}
+	.single-service {
+		padding: 30px 14px;
+	}
+	.single-count h4 {
+		padding-top: 10px;
+		font-size: 16px;
+		line-height: 20px;
+	}
+	.single-count {
+		padding: 40px 10px;
+	}
+	.blog-title h2 {
+		font-size: 14px;
+		padding: 6px 0px 5px 0px;
+		letter-spacing: 0;
+	}
+	.date span a {
+		font-size: 11px;
+	}
+	.blog-desc p {
+		padding: 10px 0px 10px 0;
+	}
+	.logo,
+	.menu-area {
+	    width: 100%;
+	}
+	.logo {
+	    text-align: center;
+	}
+	.logo a {
+	    margin: 30px 0 0;
+	}	
+} 
+ 
+/* Small mobile 576px 767px */
+@media only screen and (min-width: 576px) and (max-width: 767.98px){
+    .nav-bar.d-flex.justify-content-around.sticky {
+		display: none !important;
+	}
+	.menu-area {
+		text-align: center;
+	}
+	.logo a {
+		margin: 25px 0px 30px 42px;
+		display: inline-block;
+	}
+	.menu-area ul li a {
+		color: #000;
+	}
+	.menu-area ul li{
+		display: block;
+	}
+	.title-text h2,
+	.title-text-1 h2 {
+		font-size: 26px;
+		line-height: 30px;
+	}
+	.title-text p,
+	.title-text-1 p {
+		padding: 8px 0px 50px 0px;
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.ptb-100 {
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+	.header-area {
+		height: 85vh;
+	} 
+	.header-img {
+		width: 25%;
+	}	
+	.header-text img {
+		margin-bottom: 0px;
+		margin-top: -78px;
+		padding-bottom: 12px;
+	}
+	.header-text h2 {
+		font-size: 26px;
+		line-height: 40px;
+    }
+	.cd-words-wrapper {
+		font-size: 14px;
+	}
+	.cd-headline {
+		font-size: 14px;
+		line-height: 16px;
+	}
+	.button-head {
+		padding: 6px 11px;
+		font-size: 11px;
+		line-height: 16px;
+	}
+	.header-button span a {
+		margin-top: 16px;
+	}
+	.about-img {
+		margin-left: 70px;
+		margin-right: 70px;
+	}	
+	.square {
+		left: 76px;
+	}
+	.circle {
+		width: 10%;
+		right: 18%;
+	}
+	.circle-2 {
+		width: 7%;
+		left: 48%;
+		right: 100%;
+	}
+	.floating {
+		width: 6%;
+	}
+	p {
+		font-size: 13px;
+		line-height: 19px;
+	}
+	.single-count {
+		margin-bottom: 30px;
+	}
+	.blog-title h2 {
+		font-size: 17px;
+		padding: 4px 0px 4px 0px;
+		letter-spacing: 0px;
+	}
+	.date span a {
+		font-size: 13px;
+	}
+	.blog-desc p {
+		padding: 10px 0px;
+	}
+	.phone h4 {
+		font-size: 20px;
+	}
+	.last-top {
+		margin-top: 30px;
+	}
+	.non-2{
+		display: none;
+	}
+	.logo,
+	.menu-area {
+	    width: 100%;
+	}
+	.logo {
+	    text-align: center;
+	}
+	.logo a {
+	    margin: 30px 0 0;
+	}	
+} 
+ 
+/* Extra small mobile 320px 575px */
+@media only screen and (min-width: 320px) and (max-width: 575.98px){
+    .nav-bar.d-flex.justify-content-around.sticky {
+		display: none !important;
+	}
+	.menu-area {
+		text-align: center;
+	}
+	.logo a {
+		margin: 25px 0px 30px 42px;
+		display: inline-block;
+	}
+	.menu-area ul li a {
+		color: #000;
+	}
+	.menu-area ul li{
+		display: block;
+	}
+	.header-area {
+		height: 65vh;
+	}
+	.header-img {
+		width: 25%;
+	}	
+	.header-text img {
+		margin-bottom: 10px;
+		margin-top: -50px;
+	}
+	.header-text h2 {
+		font-size: 16px;
+		line-height: 23px;
+	}
+	.cd-words-wrapper,
+	.cd-headline {
+		font-size: 14px;
+	}
+	.header-button span a {
+		display: none;
+	}
+	p {
+		font-size: 13px;
+		line-height: 19px;
+	}
+	.title-text h2, .title-text-1 h2 {
+		font-size: 22px;
+		line-height: 30px;
+	}
+	.circle-2 {
+		display: none;
+	}
+	.circle {
+		display: none;
+	}
+	.square {
+		display: none;
+	}
+	.single-service {
+		margin: 20px;
+	}
+	.non {
+		display: none;
+	}
+	.single-count,
+	.single-pricing-item,
+	.our-team,
+	.single-blog,
+	.phone,
+	.sms {
+		margin-bottom: 30px;
+	}
+	.signature h3 {
+		padding-top: 27px;
+		padding-left: 16px;
+		text-align: left;
+	}
+	.portfolio-button ul li a {
+		padding: 7px 18px;
+		font-size: 12px;
+	}
+	.about-img {
+	    margin: 0 15px;
+	}
+	.nes {
+	    margin-bottom: 30px;
+	}
+	.logo,
+	.menu-area {
+	    width: 100%;
+	}
+	.logo {
+	    text-align: center;
+	}
+	.logo a {
+	    margin: 30px 0 0;
+	}
+} 
